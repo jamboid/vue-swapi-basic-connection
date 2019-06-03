@@ -6,13 +6,16 @@
 </template> 
 
 <script>
-import FormMixin from '@/mixins/form';
 import { required } from 'vuelidate/lib/validators';
+
+import FormMixin from '@/mixins/formValidation';
+
 import Button from "@/components/FormButton/FormButton.vue";
 import TextField from "@/components/FormTextField/FormTextField.vue"; 
 
 export default {
   name: "SearchForm",
+  mixins: [FormMixin],
   data: function () {
     return {
       term:''
@@ -32,10 +35,8 @@ export default {
       if(this.$v.$anyError || !this.isActive) {
         return;
       }
-      
     }
-  },
-  mixins: [FormMixin]
+  }  
 }
 
 </script>

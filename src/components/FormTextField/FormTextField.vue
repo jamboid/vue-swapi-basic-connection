@@ -13,26 +13,11 @@
 </template>
 
 <script>
+import BaseFormField from '@/mixins/baseFormField';
+
 export default {
   name: "FormTextField",
-  props: {
-    id: {
-      type:String,
-      required: true
-    },
-    value: {
-      type:String,
-      required: false
-    },
-    label: {
-      type: String,
-      required: true
-    },
-    status: {
-      type: String,
-      required: false
-    }
-  }
+  mixins: [BaseFormField]  
 }
 </script>
 
