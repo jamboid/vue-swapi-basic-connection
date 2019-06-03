@@ -1,0 +1,37 @@
+// Text Field component styles
+
+.cp_TextArea {
+  $self: &;
+
+  margin:0 0 1em; 
+
+  &__label {
+    font-size:em(18);
+    font-weight: 600;
+    color:$clrBlue;
+    display: block;
+    margin:0 0 em(5,20);
+  }
+
+  &__input {
+    font-size:em(18);
+    padding:em(10,18);
+    font-weight: $medium;
+    width: 100%;
+    max-width:100%;
+    min-width:100%;
+    height:150px;
+    border-radius:6px; 
+    border:1px solid $clrVeryLightGrey;
+  }
+
+  &--error {
+    #{ $self }__label {
+      color:$clrRed;
+    }
+
+    #{ $self }__input {
+      border-color:$clrRed;
+    }
+  }
+}
