@@ -7,7 +7,7 @@ const testProps = {
 }
 
 describe('FormButton.vue', () => {
-  it('renders props.label as button text when passed', () => {
+  it('renders props.label as button text', () => {
     const button = shallowMount(FormButton, {
       propsData: testProps
     })
