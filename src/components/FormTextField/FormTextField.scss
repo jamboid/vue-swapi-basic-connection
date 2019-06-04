@@ -7,10 +7,10 @@
 
   &__label {
     font-size:em(18);
-    font-weight: 600;
+    font-weight: 900;
     color:$clrBlue;
     display: block;
-    margin:0 0 em(5,20);
+    margin:0 0 em(15,20);
   }
 
   &__input {
@@ -18,7 +18,7 @@
     padding:em(10,18);
     font-weight: $medium;
     width: 100%;
-    border-radius:6px;
+    border-radius:3px;
     border:1px solid $clrVeryLightGrey;
   }
 
