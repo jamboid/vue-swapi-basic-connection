@@ -1,6 +1,6 @@
 <template>
   <form class="cp_SearchForm" v-on:submit.prevent=handleFormSubmit>
-    <TextField id="term" v-model="term" label="Search Term" placeholder="e.g. Kyle Katarn" :status="$v.term.$error ? 'error' : null" @blur="$v.term.$touch()" @input="$v.term.$touch()"></TextField>
+    <TextField id="term" v-model="term" label="What are you looking for?" placeholder="e.g. Kyle Katarn" :status="$v.term.$error ? 'error' : null" @blur="$v.term.$touch()" @input="$v.term.$touch()"></TextField>
     <Button label="Search" mode="basic"></Button>
   </form>
 </template> 
