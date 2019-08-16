@@ -1,0 +1,23 @@
+// Form Report component styles
+
+.cp_FormReport {
+  grid-column:5 / span 8;
+
+  &__inner {
+    padding:em(40);
+    background:$clrGrey;
+    color:$clrWhite;
+    border-radius:6px;
+    text-align: left;
+  }
+
+  pre {
+    line-height: 1.5;
+    font-family: $monospacefontfamily;
+  }
+
+  &__title {
+    color:lighten($clrGreen,30); 
+    margin-bottom:1em;
+  }
+}

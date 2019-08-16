@@ -1,16 +1,19 @@
 <template>
   <div id="app" class="gd_Base">
     <SearchForm></SearchForm>
+    <FormReport reportTitle="Search Results"></FormReport>
   </div>
 </template>
 
 <script>
 import SearchForm from "@/components/SearchForm/SearchForm"; 
+import FormReport from "@/components/FormReport/FormReport";
 
 export default {
   name: 'app',
   components: {
-    SearchForm 
+    SearchForm,
+    FormReport 
   }
 }
 </script>
