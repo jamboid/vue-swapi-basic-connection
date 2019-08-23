@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
-import store from './store'
-import './registerServiceWorker'
-import './assets/scss/global.scss'
+import Vue from 'vue';
+import App from './App.vue';
+import store from './store';
+
+import './registerServiceWorker';
+import './assets/scss/global.scss';
 
 Vue.config.productionTip = false
 

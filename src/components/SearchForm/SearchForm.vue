@@ -11,7 +11,7 @@ import FormMixin from '@/mixins/formValidation';
 import Button from "@/components/FormButton/FormButton.vue";
 import TextField from "@/components/FormTextField/FormTextField.vue"; 
 
-import { getJSON } from "@/modules/Ajax"
+import { getJSON } from "@/modules/Ajax";
 
 const API_BASE_URL = "https://swapi.co/api/";
 const API_PEOPLE_SEARCH_URL = "people/?search=";
