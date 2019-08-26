@@ -1,7 +1,14 @@
 
 .cp_CharProfile {
+  padding:20px;
+  margin:0 0 15px;
+  box-shadow:2px 2px 4px rgba($clrBlack,0.1), 0 0 20px rgba($clrBlack,0.15);
+  border-radius:3px;
+
   
   &__name {
-    font-size:rem(24);
+    font-size:rem(22);
+    font-weight: $bold;
+    color:$clrDarkBlue;
   }
 }

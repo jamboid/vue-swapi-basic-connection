@@ -7,14 +7,14 @@
 
 <script>
 import { required } from 'vuelidate/lib/validators';
+
+import { CONSTANTS } from "@/config";
+
 import FormMixin from '@/mixins/formValidation';
 import Button from "@/components/FormButton/FormButton.vue";
 import TextField from "@/components/FormTextField/FormTextField.vue"; 
 
 import { getJSON } from "@/modules/Ajax";
-
-const API_BASE_URL = "https://swapi.co/api/";
-const API_PEOPLE_SEARCH_URL = "people/?search=";
 
 export default {
   name: "SearchForm",
@@ -44,7 +44,9 @@ export default {
       }
 
       if(this.$v.$anyError || !this.isActive) {
-        const endpoint = API_BASE_URL + API_PEOPLE_SEARCH_URL + this.term;
+        const endpoint = CONSTANTS.API.BASE_URL + CONSTANTS.API.PEOPLE_SEARCH_URL + this.term;
+
+        console.log(endpoint);
         
         getJSON(endpoint)
         .then(data => {
