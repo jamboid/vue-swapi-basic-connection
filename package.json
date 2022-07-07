@@ -12,7 +12,7 @@
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "intersection-observer": "^0.5.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "pubsub-js": "^1.7.0",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
